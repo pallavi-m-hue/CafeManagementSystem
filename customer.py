@@ -9,7 +9,7 @@ import pymysql
 def load_customer(rightFrame):
     for widget in rightFrame.winfo_children():
         widget.destroy()
-    scrollBarX=Scrollbar(rightFrame,orient=HORIZONTAL)
+    scrollBarX=Scrollbar(rightFrame,orient=HORIZONTAL) 
     scrollBarY=Scrollbar(rightFrame,orient=VERTICAL)
     cafeTable=ttk.Treeview(rightFrame,columns=('Id','Name','Contact','Email','Address'),xscrollcommand=scrollBarX.set,yscrollcommand=scrollBarY.set)
     scrollBarX.config(command=cafeTable.xview)
